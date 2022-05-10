@@ -25,10 +25,6 @@ export function FeedbackContentStep({ feedbackType,
 
         seIsSendingFeedback(true)
 
-        // console.log({
-        //     screenshot,
-        //     comment
-        // })
         await api.post('/feedbacks', {
             type: feedbackType,
             comment,
